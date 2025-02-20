@@ -17,13 +17,18 @@ public class MusicBox {
         this.songID = songID;
         this.isSongPremium = premiumSong;
         this.songArtists = artists;
-        
+        this.songTitle = title;
+        this.songAlbum = Album;
+        this.songGenre = genre;
+        this.songProducer = producer;
+        this.songMusicLabel = label;
         // -- TODO
         /* Initialise  the rest of the variables in this Constructor block*/
     }
     
     
     //Methods
+   
     public String getSongID() {
         return songID;
     }
@@ -35,10 +40,27 @@ public class MusicBox {
     public char getPremiumSong() {
         return isSongPremium;
     }
-
+    
     // -- TODO
         /* Create the rest of "getters" for the remaining variables */
-    
+        public String getsongTitle() {
+            return songTitle;
+        }
+        public String getSongProducer() {
+            return songProducer;
+        }
+        public String getsongMusicLabel() {
+            return songMusicLabel;
+        }
+        public String getsongDenre() {
+            return songGenre;
+        }
+        public String getsongAlbum() {
+            return songAlbum;
+        }
+        public int getnoAds() {
+            return noAds;
+        }
         /* The following method is complete. You don't have to do anything here. Just try to understand it. */
         public void playSong(String songID, char premium, int ads) {
             switch(premium){
